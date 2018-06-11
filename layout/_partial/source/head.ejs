@@ -1,0 +1,254 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.1/dist/css/mdui.min.css">
+
+<style>
+    /* Global CSS */
+
+    html,
+    body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+        overflow-x: hidden !important;
+        text-rendering: optimizeLegibility;
+    }
+
+    .header-info {
+        max-width: 450px;
+        line-height: 28px;
+    }
+
+    /* Home CSS */
+
+    #home-header {
+        background: #002B5E;
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+    }
+
+    #home-main {
+        background: url(https://cdn.jsdelivr.net/gh/x-gslb/s@0x05/site/img/maps.svg) no-repeat 0 50%;
+        z-index: 1;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        max-width: 100%;
+        height: 80vh;
+    }
+
+    .home-padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 1024px) {
+        .home-superior-list-right {
+            border-top: 1px solid #d4d4d4 !important;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .home-superior-list-right {
+            border-left: 1px solid #d4d4d4 !important;
+        }
+    }
+
+    .home-superior-padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* superior style */
+
+    .superior-card-height {
+        height: 60vh;
+    }
+
+    .superior-card-icon {
+        height: 128px;
+        width: 128px;
+    }
+
+    /* Download CSS */
+
+    .dl-header {
+        background: #0288D1;
+        background: linear-gradient(to bottom, #0288D1, #283593);
+        background-size: cover;
+        background-position: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .dl-btn-border {
+        border: 1px solid #bbb;
+    }
+
+    .dl-docs-border {
+        border: 1px solid #bbb;
+    }
+
+    .dl-card-border {
+        box-shadow: 1px 0 0 0 #e3e3e3, 0 1px 0 0 #e3e3e3, 1px 1px 0 0 #e3e3e3, inset 1px 0 0 0 #e3e3e3, inset 0 1px 0 0 #e3e3e3;
+    }
+
+    /* Relay CSS */
+
+    .rl-header {
+        background: #616161;
+        background: linear-gradient(to top, #212121, #616161);
+        background-size: cover;
+        background-position: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .rl-padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .rl-node-list {
+        background: #212121;
+        background: linear-gradient(to top, #616161, #212121);
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .rl-divider-1 {
+        background: #757575;
+        background: linear-gradient(to top, #757575, #616161);
+        background-size: cover;
+        background-position: center;
+        height: 60px;
+    }
+
+    .relay-digital-earth {
+        width: 70%;
+    }
+
+    @media (min-width: 600px) {
+        .relay-digital-earth {
+            width: 60%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .relay-digital-earth {
+            width: 100%;
+        }
+    }
+
+    .rl-info-img-height {
+        max-height: 230px
+    }
+
+    .rl-info-text {
+        line-height: 28px
+    }
+
+    /* Price CSS */
+
+    .price-header {
+        background: #283593;
+        background: linear-gradient(to top, #7986CB, #283593);
+        background-size: cover;
+        background-position: center;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
+    /* Info CSS */
+
+    .info-header {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    /* ToS CSS */
+
+    #tos-header {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* Partner CSS */
+
+    .partner-header {
+        background: #EF5350;
+        background: linear-gradient(to top, #EF9A9A, #EF5350);
+        background-size: cover;
+        background-position: center;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+
+    /* Footer CSS */
+
+    footer {
+        padding: 16px 0;
+        background-color: #303030;
+        color: #9e9e9e;
+    }
+
+    footer a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #bbbbbb;
+    }
+
+    .footer-nav h2 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: .04em;
+        margin-top: 0;
+        margin-bottom: 22px;
+    }
+
+    .footer-nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .footer-nav ul li {
+        margin: 0 0 10px 0;
+    }
+
+    .footer-divider {
+        margin: 16px 0;
+    }
+
+    .footer-copyright {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    @media (min-width: 600px) {
+        footer {
+            padding: 24px 0;
+        }
+        .footer-divider {
+            margin: 24px 0;
+        }
+        .footer-copyright {
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        footer {
+            padding: 32px 0;
+        }
+        .footer-divider {
+            margin: 32px 0;
+        }
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/mdui@0.4.1/dist/js/mdui.min.js"></script>

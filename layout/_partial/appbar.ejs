@@ -1,0 +1,31 @@
+<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide">
+    <div class="mdui-toolbar <% if(page.appbarcolor) { %><%= page.appbarcolor %><% } else { %>mdui-color-theme-900<% } %>">
+        <!-- Padding left -->
+        <div class="mdui-p-l-2 mdui-hidden-sm-down"></div>
+
+        <!-- /** Drawer Button **/ -->
+        <!-- Only show on small device -->
+        <button class="mdui-btn mdui-btn-icon mdui-hidden-md-up" mdui-drawer="{target: '#drawer'}"><i class="mdui-icon material-icons">menu</i></button>
+
+        <!-- /** AppBar Title **/ -->
+        <div class="mdui-toolbar-spacer mdui-hidden-md-up mdui-hidden-xs"></div>
+        <i class="mdui-icon material-icons">cloud</i>
+        <a href="/" class="mdui-typo-headline">CloudHammer</a>
+
+        <!-- /** AppBar Content **/ -->
+        <!-- Only show on larger device -->
+        <a href="<%= theme.url.relay %>" class="mdui-typo-body-2 mdui-hidden-sm-down">流量中继</a>
+        <a href="<%= theme.url.howitwork %>" class="mdui-typo-body-2 mdui-hidden-sm-down">工作原理</a>
+        <a href="<%= theme.url.price %>" class="mdui-typo-body-2 mdui-hidden-sm-down">价格与优惠</a>
+        <a href="<%= theme.url.resource %>" class="mdui-typo-body-2 mdui-hidden-sm-down">资源与支持</a>
+        <a href="<%= theme.url.tos %>" class="mdui-typo-body-2 mdui-hidden-sm-down">条款及保障</a>
+
+        <div class="mdui-toolbar-spacer"></div>
+
+        <a href="<%= theme.url.console %>" class="mdui-typo-body-2 mdui-hidden-sm-down">用户中心</a>
+
+        <!-- Padding right -->
+        <div class="mdui-p-r-2 mdui-hidden-sm-down"></div>
+
+    </div>
+</div>

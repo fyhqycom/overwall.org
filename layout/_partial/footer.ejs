@@ -1,0 +1,106 @@
+<!-- /**** Home Enter to Console ****/ -->
+<div id="enter" class="<% if(page.footercolor) { %><%= page.footercolor %><% } else { %>mdui-color-blue-grey-400<% } %> mdui-p-y-5">
+    <div class="mdui-container mdui-p-y-5">
+        <div class="mdui-center">
+            <h1 class="mdui-text-center mdui-typo-display-1 mdui-text-color-white">开始使用 CloudHammer</h1>
+            <p class="mdui-text-center mdui-typo-subheading mdui-text-color-white">立即接入 CloudHammer 流量中继服务，享受极致网络体验</p>
+            <br>
+            <br>
+            <div class="mdui-col-xs-10 mdui-col-offset-xs-1 mdui-col-sm-8 mdui-col-offset-sm-2 mdui-col-md-6 mdui-col-offset-md-3 mdui-row-xs-2">
+                <div class="mdui-col">
+                    <a href="<%= theme.url.console %>/auth/register" class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block <% if(page.footerbuttoncolor) { %><%= page.footerbuttoncolor %><% } else { %>mdui-color-theme-900<% } %>">免费注册</a>
+                </div>
+                <div class="mdui-col">
+                    <a href="<%= theme.url.price %>" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple mdui-color-grey-300">查看套餐</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- /**** Contact Dialog ****/ -->
+<div class="mdui-dialog" id="contact-dialog">
+    <div class="mdui-dialog-title">联系我们</div>
+    <div class="mdui-dialog-content mdui-typo">
+        <span>CloudHammer 位于 Telegram 用户的交流群 <a href="https://t.me/CloudHammer" target="_blank">@CloudHammer</a></span><br><br>
+        <span>您可以发送版权侵权通知到 <code>dmca@jiangxia.gov.cn</code></span><br><br>
+        <span>当您发现有人使用 CloudHammer 的服务进行了违反本 AUP 协议的行为，您可以发送相关通知到 <code>abuse@jiangxia.gov.cn</code></span>
+    </div>
+  </div>
+
+
+
+<!-- /**** Footer ****/ -->
+<footer>
+    <div class="mdui-container">
+        <div class="mdui-row footer-nav">
+
+            <!-- * Footer Section Logo * -->
+            <div class="mdui-col-md-3 mdui-hidden-sm-down">
+                <img class="mdui-center lazy" style="width:56px;height:auto" data-src="https://cdn.jsdelivr.net/gh/x-gslb/s@0x05/site/img/logo/logo-460.png">
+                <h3 class="mdui-text-center">CloudHammer</h3>
+            </div>
+
+            <!-- * Footer Section 1 * -->
+            <div class="mdui-p-t-2 mdui-col-md-2 mdui-col-sm-3 mdui-col-xs-6">
+                <h2>产品</h2>
+                <ul>
+                    <li><a href="<%= theme.url.relay %>">流量中继</a></li>
+                    <li><a href="<%= theme.url.howitwork %>">工作原理</a></li>
+                    <li><a href="<%= theme.url.price %>">套餐价格</a></li>
+                </ul>
+            </div>
+
+            <!-- * Footer Section 2 * -->
+            <div class="mdui-p-t-2 mdui-col-md-2 mdui-col-sm-3 mdui-col-xs-6">
+                <h2>资源与支持</h2>
+                <ul>
+                    <li><a href="<%= theme.url.resource %>">客户端</a></li>
+                    <li><a href="<%= theme.url.resource %>">使用教程</a></li>
+                    <li><a href="<%= theme.url.docs %>" target="_blank" rel="noopener">技术文档</a></li>
+                    <li><a href="<%= theme.url.console %>/user" class="mdui-text-color-theme-400" target="_blank">用户中心</a></li>
+                </ul>
+            </div>
+
+            <!-- * Footer Section 3 * -->
+            <div class="mdui-p-t-2 mdui-col-md-2 mdui-col-sm-3 mdui-col-xs-6">
+                <h2>条款及保障</h2>
+                <ul>
+                    <li><a href="<%= theme.url.tos %>">总则</a></li>
+                    <li><a href="<%= theme.tos.url.tos %>">服务条款</a></li>
+                    <li><a href="<%= theme.tos.url.privacy %>">隐私政策</a></li>
+                    <li><a href="<%= theme.tos.url.aup %>">可接受使用政策</a></li>
+                </ul>
+            </div>
+
+            <!-- * Footer Section 4 * -->
+            <div class="mdui-p-t-2 mdui-col-md-2 mdui-col-sm-3 mdui-col-xs-6">
+                <h2>关于</h2>
+                <ul>
+                    <li><a mdui-dialog="{target: '#contact-dialog'}">联系我们</a></li>
+                    <li><a href="https://status.overwall.org" target="_blank">服务运行状态</a></li>
+                    <li><a href="https://t.me/CloudHammer" target="_blank">Telegram 频道</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ** Footer Divider ** -->
+        <div class="mdui-divider-light footer-divider"></div>
+
+        <p class="footer-copyright">Copyright&nbsp;&copy;&nbsp;<span year></span>&nbsp;<a href="/">CloudHammer</a> All rights reserved.</p>
+        <br>
+    </div>
+</footer>
+<script>
+var copyrightNow = new Date().getFullYear();
+var textContent = document.querySelector('span[year]')
+
+copyrightSince = 2017;
+if (copyrightSince === copyrightNow) {
+    textContent.textContent = copyrightNow
+} else {
+    textContent.textContent = copyrightSince + ' - ' + copyrightNow
+}
+</script>

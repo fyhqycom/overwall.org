@@ -1,0 +1,27 @@
+<!-- /**** ToS Header ****/ -->
+<section id="tos-header" class="mdui-valign mdui-center <% if(page.appbarcolor) { %><%= page.appbarcolor %><% } else { %>mdui-color-theme-900<% } %>">
+    <div class="mdui-container-fluid mdui-p-x-0 mdui-p-t-2">
+
+    <h1 class="mdui-text-center mdui-typo-display-1"><%= page.title %></h1>
+    <p class="mdui-text-center mdui-typo-subheading"><b>最后更新时间：</b><%= page.update %></p>
+
+    </div>
+</section>
+<!-- /**** ToS Tab ****/ -->
+<div class="mdui-tab mdui-tab-centered mdui-tab-scrollable" mdui-tab>
+    <a href="<%= theme.url.tos %>" class="mdui-ripple">总则</a>
+    <a href="<%= theme.tos.url.tos %>" class="mdui-ripple <% if(page.type === "tos") { %>mdui-tab-active<% } %>">服务条款</a>
+    <a href="<%= theme.tos.url.privacy %>" class="mdui-ripple <% if(page.type === "privacy") { %>mdui-tab-active<% } %>">隐私政策</a>
+    <a href="<%= theme.tos.url.aup %>" class="mdui-ripple <% if(page.type === "aup") { %>mdui-tab-active<% } %>">可接受使用政策</a>
+</div>
+
+<!-- /**** ToS All ****/ -->
+<section class="mdui-p-y-4">
+    <div class="mdui-container">
+    <div class="mdui-col-xs-12 mdui-col-sm-10 mdui-col-md-8 mdui-col-offset-sm-1 mdui-col-offset-md-2">
+        <article class="mdui-typo">
+            <%- page.content %>
+        </article>
+    </div>
+    </div>
+</section>

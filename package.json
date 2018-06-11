@@ -1,0 +1,23 @@
+{
+  "name": "CloudHammer",
+  "version": "1.0.0",
+  "description": "This repository contains the main source code behind the CloudHammer offical website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "setup": "npm cache clean && npm install",
+    "lint": "npm run setup && bash lint.sh"
+  },
+  "author": "CloudHammer",
+  "license": "MIT",
+  "devDependencies": {
+    "ejs-lint": "^0.2.0",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "sass-lint": "^1.10.2"
+  },
+}

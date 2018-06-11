@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+# Head info
+head:
+  favicon:
+  high_res_favicon:
+  keywords:
+  site_verification:
+    google:
+    baidu:
+
+# ---------------------------------------------------------------
+# Partial Settings
+# ---------------------------------------------------------------
+
+relay:
+  global:
+    dc:
+    partner:
+    node:
+    alltraffic:
+    pertraffic:
+  node:
+    left:
+    right:
+
+# ******* Price Settings ********
+
+price:
+  a:
+    title:
+    monthly:
+    yearly:
+    traffic:
+    info:
+  b:
+    title:
+    monthly:
+    yearly:
+    traffic:
+    info:
+
+# ******* ToS Settings ********
+
+tos:
+  date:
+    tosindex:
+    tos:
+    privacy:
+    aup:
+  url:
+    tos:
+    privacy:
+    aup:
+
+# ---------------------------------------------------------------
+# URL Settings
+# ---------------------------------------------------------------
+
+# URL Links Settings
+url:
+  relay:
+  price:
+  resource:
+  tos:
+  docs:
+  console:
+  howitwork:
+  clientdl:
+    Android:
+    Windows:
+    Mac:
+    SSTap1093:
+    SSTap1097:
+    SSTap1101:
+    Shadowrocket:
+    Potatso:
+    Quantumult:
+  clientdocs:
+    Android:
+    Windows:
+    Mac:
+    sstap:
+    Shadowrocket:
+    Potatso:
+    Quantumult:
+
+
+# Files Vendor
+# Set a CDN for the files src you want to customize. The url should with protocol.
+# Default(empty) will load the files from the origin server.
+vendor:
+
+# ---------------------------------------------------------------
+# Style Settings
+# ---------------------------------------------------------------
+
+# Theme Color
+color:
+  android_chrome_color:
+
+# ---------------------------------------------------------------
+# Do Not Edit Below This Line, unless you know what you are doing!
+# ---------------------------------------------------------------
+developmentmode: off

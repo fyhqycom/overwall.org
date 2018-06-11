@@ -1,0 +1,57 @@
+<!-- /**** Price Header ****/ -->
+<section class="price-header mdui-valign mdui-center">
+    <div class="mdui-container-fluid mdui-p-x-0 mdui-p-t-2">
+    <h1 class="mdui-text-center mdui-text-color-white mdui-typo-subheading">套餐价格</h1>
+    <h2 class="mdui-text-center mdui-text-color-white mdui-typo-display-1">根据您的需求选择套餐</h2>
+    </div>
+</section>
+
+<!-- /**** Price Cards ****/ -->
+<section id="price-list" class="mdui-p-y-5 mdui-color-grey-200">
+    <div class="mdui-container">
+    <div class="mdui-row-xs-1 mdui-row-sm-3 mdui-row-md-5 mdui-row-gapless mdui-center">
+
+        <% for (var i in theme.price){ %>
+        <div class="mdui-col mdui-p-t-1">
+            <div class="mdui-card mdui-p-x-0">
+                <div class="mdui-card-primary mdui-text-center mdui-p-x-1 mdui-m-b-0">
+                    <h3 class="mdui-card-primary-subtitle mdui-m-t-0"><%= theme.price[i].title %></h3>
+                    <p>
+                        <span class="mdui-typo-headline mdui-text-color-indigo-900">￥&nbsp;</span><span class="mdui-typo-display-2 mdui-text-color-grey-800"><%= theme.price[i].monthly %></span><span class="mdui-p-r-4"></span>
+                    </p>
+                    <p class="mdui-card-primary-subtitle mdui-typo-subheading mdui-m-t-0">每月/起</p>
+                    <div class="mdui-divider"></div>
+                    <p>
+                        <span class="mdui-typo-headline mdui-text-color-indigo-900">￥&nbsp;</span><span class="mdui-typo-display-2 mdui-text-color-grey-800"><%= theme.price[i].yearly %></span><span class="mdui-p-r-4"></span>
+                    </p>
+                    <p class="mdui-card-primary-subtitle mdui-typo-subheading mdui-m-t-0">每年/起</p>
+                    <p class="mdui-card-primary-subtitle mdui-typo-subheading mdui-m-y-0"><%= theme.price[i].traffic %>/月</p>
+                </div>
+                <div class="mdui-card-actions mdui-p-x-3">
+                    <a href="https://console.overwall.org/user/shop" target="_blank" class="mdui-btn mdui-ripple mdui-btn-raised mdui-color-theme-700 mdui-btn-block">立即购买</a>
+                </div>
+                <div class="mdui-card-content mdui-typo mdui-p-t-2 mdui-p-x-4">
+                    <p class="mdui-typo-subheading mdui-m-t-0" style="font-size:110%"><%= theme.price[i].title %> 包含：</p>
+                    <ul class="mdui-p-l-0" style="list-style: none;">
+                    <% if(Array.isArray(theme.price[i].info)) { %>
+                        <li class="mdui-m-b-1"><span class="mdui-typo-subheading-opacity mdui-mb-4"><%- theme.price[i].info.join('</span></li><li class="mdui-m-b-1"><span class="mdui-typo-subheading-opacity mdui-m-b-4">') %></span></li>
+                    <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <% } %>
+
+    </div>
+    </div>
+
+</section>
+<section class="mdui-p-y-5 mdui-color-grey-200">
+    <p class="mdui-typo-body-2 mdui-text-color-grey-800 mdui-text-center mdui-m-y-0">
+        <small>
+            <span>*阁下可通过购买附加流量包和附加支持服务获得更多可用流量和工单额度</span>
+            <br>
+            <span>*由于中国大陆网络环境复杂，流量中继服务的实际速率和延时取决于阁下所在的网络环境和运营商带宽上限</span>
+        </small>
+    </p>
+</section>

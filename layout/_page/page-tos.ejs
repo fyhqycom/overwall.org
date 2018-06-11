@@ -1,0 +1,66 @@
+<!-- /**** ToS Header ****/ -->
+<section id="tos-header" class="mdui-valign mdui-center mdui-color-teal-700">
+    <div class="mdui-container-fluid mdui-p-x-0 mdui-p-t-2">
+
+    <h1 class="mdui-text-center mdui-text-color-white mdui-typo-display-1"><%= page.title %></h1>
+    <p class="mdui-text-center mdui-text-color-white mdui-typo-title"><b>最后更新时间：</b><%= theme.tos.date.tosindex %></p>
+
+    </div>
+</section>
+<!-- /**** ToS Tab ****/ -->
+<div class="mdui-tab mdui-tab-centered mdui-tab-scrollable">
+    <a href="<%= theme.url.tos %>" class="mdui-ripple mdui-tab-active">总则</a>
+    <a href="<%= theme.tos.url.tos %>" class="mdui-ripple">服务条款</a>
+    <a href="<%= theme.tos.url.privacy %>" class="mdui-ripple">隐私政策</a>
+    <a href="<%= theme.tos.url.aup %>" class="mdui-ripple">可接受使用政策</a>
+</div>
+
+<!-- /**** ToS All ****/ -->
+<section class="mdui-p-t-4">
+    <div class="mdui-container">
+    <div class="mdui-col-xs-12 mdui-col-sm-10 mdui-col-md-8 mdui-col-offset-sm-1 mdui-col-offset-md-2">
+        <article class="mdui-typo">
+            <%- page.content %>
+        </article>
+    </div>
+    </div>
+</section>
+
+<!-- /**** ToS List ****/ -->
+<section class="mdui-valign mdui-center mdui-p-b-4">
+    <div class="mdui-container">
+    <div class="mdui-col-xs-12 mdui-col-sm-10 mdui-col-md-6 mdui-col-offset-sm-1 mdui-col-offset-md-2 mdui-text-center">
+        <ul class="mdui-list">
+            <a href="<%= theme.tos.url.tos %>">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-avatar mdui-icon material-icons">book</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">服务条款</div>
+                    <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">最后更新于：</span><%= theme.tos.date.tos %></div>
+                </div>
+            </li>
+            </a>
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <a href="<%= theme.tos.url.privacy %>">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-avatar mdui-icon material-icons">remove_red_eye</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">隐私政策</div>
+                    <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">最后更新于：</span><%= theme.tos.date.privacy %></div>
+                </div>
+            </li>
+            </a>
+            <li class="mdui-divider mdui-m-y-0"></li>
+            <a href="<%= theme.tos.url.aup %>">
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-avatar mdui-icon material-icons">library_books</i>
+                <div class="mdui-list-item-content">
+                    <div class="mdui-list-item-title">可接受使用政策</div>
+                    <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">最后更新于：</span><%= theme.tos.date.aup %></div>
+                </div>
+            </li>
+            </a>
+
+        </ul>
+    </div>
+</section>

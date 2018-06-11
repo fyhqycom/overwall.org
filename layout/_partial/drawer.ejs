@@ -1,0 +1,43 @@
+<div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close mdui-color-white" id="drawer">
+    <nav>
+    <ul class="mdui-list">
+        <!-- /**** Drawer Title ****/ -->
+        <a href="/" >
+            <li class="mdui-list-item">
+                <div class="mdui-typo-headline-opacity mdui-center">CloudHammer</div>
+            </li>
+        </a>
+
+        <!-- /**** Drawer Divider ****/ -->
+        <li class="mdui-divider"></li>
+
+        <a href="<%= theme.url.console %>" class="mdui-list-item mdui-text-color-theme-400">用户中心</a>
+
+        <!-- /**** Drawer SubHeader 1 ****/ -->
+        <li class="mdui-subheader">产品</li>
+        <a href="<%= theme.url.relay %>"><li class="mdui-list-item">流量中继</li></a>
+        <a href="<%= theme.url.howitwork %>"><li class="mdui-list-item">工作原理</li></a>
+        <a href="<%= theme.url.price %>"><li class="mdui-list-item">套餐价格</li></a>
+
+        <!-- /**** Drawer SubHeader 2 ****/ -->
+        <li class="mdui-subheader">资源与支持</li>
+
+        <a href="<%= theme.url.resource %>"><li class="mdui-list-item">客户端下载</li></a>
+        <a href="<%= theme.url.resource %>"><li class="mdui-list-item">使用教程</li></a>
+        <a href="<%= theme.url.docs %>" target="_blank" rel="noopener"><li class="mdui-list-item">技术文档</li></a>
+
+        <!-- /**** Drawer SubHeader 3 ****/ -->
+        <li class="mdui-subheader">条款及保障</li>
+
+        <a href="<%= theme.url.tos %>"><li class="mdui-list-item">总则</li></a>
+        <a href="<%= theme.tos.url.tos %>"><li class="mdui-list-item">服务条款</li></a>
+        <a href="<%= theme.tos.url.privacy %>"><li class="mdui-list-item">隐私政策</li></a>
+        <a href="<%= theme.tos.url.aup %>"><li class="mdui-list-item">可接受使用政策</li></a>
+
+        <!-- /**** Drawer SubHeader 4 ****/ -->
+        <li class="mdui-subheader">关于</li>
+
+        <a class="mdui-list-item" mdui-dialog="{target: '#contact-dialog'}">联系我们</a>
+    </ul>
+    </nav>
+</div>
